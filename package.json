@@ -1,0 +1,15 @@
+{
+  "name": "neo4j-training-series",
+  "version": "0.0.0",
+  "description": "I will use this project to capture my notes and thoughts from the Neo4j training series webinars.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRobBrennan/neo4j-training-series.git"
+  },
+  "author": "Rob Brennan <rob@therobbrennan.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheRobBrennan/neo4j-training-series/issues"
+  },
+  "homepage": "https://github.com/TheRobBrennan/neo4j-training-series#readme"
+}
