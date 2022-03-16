@@ -160,6 +160,10 @@ Try modifying the query selection set to return additional fields.
 
 Try using ctrl+space for auto-complete. What can you find?
 
+## Let's Build Our Own GraphQL API!
+
+TODO - Left off here - [Slide 28](https://docs.google.com/presentation/d/1DpEDMPFnRlE-vz1YmZ2fGtXfhr9Omd4CAIZ2qQeVCic/edit#slide=id.gded3c4650b_0_16)
+
 ## Resources
 
 Slide deck - [https://docs.google.com/presentation/d/1DpEDMPFnRlE-vz1YmZ2fGtXfhr9Omd4CAIZ2qQeVCic/edit#slide=id.gc60ddbe1fe_0_121](https://docs.google.com/presentation/d/1DpEDMPFnRlE-vz1YmZ2fGtXfhr9Omd4CAIZ2qQeVCic/edit#slide=id.gc60ddbe1fe_0_121)
