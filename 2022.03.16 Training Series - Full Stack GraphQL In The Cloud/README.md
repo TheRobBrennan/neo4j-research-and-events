@@ -119,7 +119,49 @@ MATCH (a)-[:HAS_TOPIC]->(t:Topic)<-[:HAS_TOPIC]-(rec:Article)
 RETURN *
 ```
 
+### Building GraphQL APIs
+
+[Slide 23](https://docs.google.com/presentation/d/1DpEDMPFnRlE-vz1YmZ2fGtXfhr9Omd4CAIZ2qQeVCic/edit#slide=id.gded3c4650b_0_88) - Notice the problem here. We have a typical performance issue where we are going back to the database several times any time a room, theme, or recommended field is required.
+
+[Slide 25](https://docs.google.com/presentation/d/1DpEDMPFnRlE-vz1YmZ2fGtXfhr9Omd4CAIZ2qQeVCic/edit#slide=id.gded3c4650b_0_101) illustrates some common challenges with GraphQL.
+
+Let's use the [Neo4j GraphQL Library](https://neo4j.com/product/graphql-library/) to make life easier on us and avoid this.
+
+#### Exercise
+
+Open [https://news-graph.vercel.app/api/graphql](https://news-graph.vercel.app/api/graphql).
+
+Explore the "Docs" tab to learn more about the API schema.
+
+Run these GraphQL queries:
+
+```gql
+{
+  articles(options: { sort: { published: DESC }, limit: 10 }) {
+    title
+    url
+    published
+  }
+}
+```
+
+```gql
+{
+  topics(where: { name: "Movies" }) {
+    name
+    articles {
+      title
+    }
+  }
+}
+```
+
+Try modifying the query selection set to return additional fields.
+
+Try using ctrl+space for auto-complete. What can you find?
+
 ## Resources
 
 Slide deck - [https://docs.google.com/presentation/d/1DpEDMPFnRlE-vz1YmZ2fGtXfhr9Omd4CAIZ2qQeVCic/edit#slide=id.gc60ddbe1fe_0_121](https://docs.google.com/presentation/d/1DpEDMPFnRlE-vz1YmZ2fGtXfhr9Omd4CAIZ2qQeVCic/edit#slide=id.gc60ddbe1fe_0_121)
 Neo4j Cypher Refcard 4.4 - [https://dev.neo4j.com/refcard](https://dev.neo4j.com/refcard)
+Neo4j GraphQL Library - [https://neo4j.com/product/graphql-library/](https://neo4j.com/product/graphql-library/)
