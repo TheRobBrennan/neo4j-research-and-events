@@ -109,6 +109,17 @@ RETURN p
 
 ![screenshots/20220316-01-neo4j-browser-find-shortest-path-between-cheese-and-tiktok.png](screenshots/20220316-01-neo4j-browser-find-shortest-path-between-cheese-and-tiktok.png)
 
+#### Exercise
+
+For this exercise, we’re going to write an article recommendation query. Imagine a user is reading an article and wants to read other "similar" articles. Write a Cypher query to show similar articles to the user.
+
+```cypher
+MATCH (a:Article) WITH a LIMIT 1
+MATCH (a)-[:HAS_TOPIC]->(t:Topic)<-[:HAS_TOPIC]-(rec:Article)
+RETURN *
+```
+
 ## Resources
 
 Slide deck - [https://docs.google.com/presentation/d/1DpEDMPFnRlE-vz1YmZ2fGtXfhr9Omd4CAIZ2qQeVCic/edit#slide=id.gc60ddbe1fe_0_121](https://docs.google.com/presentation/d/1DpEDMPFnRlE-vz1YmZ2fGtXfhr9Omd4CAIZ2qQeVCic/edit#slide=id.gc60ddbe1fe_0_121)
+Neo4j Cypher Refcard 4.4 - [https://dev.neo4j.com/refcard](https://dev.neo4j.com/refcard)
