@@ -1,0 +1,13 @@
+{
+    "name": "healthcare-analytics",
+    "title": "Healthcare Analytics",
+    "description":"Load and analyze FDA Adverse Event Reporting System data",
+	"icon": "documentation/img/healthcare-icon.svg",
+    "dbms": [
+      {
+          "dumpFile": "data/healthcare-analytics-44.dump",
+          "targetNeo4jVersion":">=4.4.0 <5.0.0",
+          "plugins": []
+      }
+  ]
+}
