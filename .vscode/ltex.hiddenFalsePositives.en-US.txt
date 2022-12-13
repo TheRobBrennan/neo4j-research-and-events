@@ -1,0 +1,1 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QQuery 3 - For all the Characters we just loaded, load all the related ComicIssue, Series, Story, Event, and Creator objects.\\E$"}
