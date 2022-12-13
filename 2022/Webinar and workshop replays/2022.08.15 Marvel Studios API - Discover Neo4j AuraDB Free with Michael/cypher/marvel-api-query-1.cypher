@@ -1,10 +1,4 @@
-// Marvel API: https://developer.marvel.com/
-
 // 1) Create indexes for improving performance (also adds constraints for unique properties).
-
-:params { marvel_public: "<your public API key here>", marvel_private: "<your private API key here>" };
-//If executing in Neo4j Browser, use below syntax
-//:params "marvel_public": "<your public API key here>", "marvel_private": "<your private API key here>"
 
 // Neo4j v4.x
 // CREATE CONSTRAINT ON (char:Character) ASSERT char.id IS UNIQUE;

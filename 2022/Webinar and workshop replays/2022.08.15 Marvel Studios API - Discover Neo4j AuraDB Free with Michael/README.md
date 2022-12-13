@@ -14,6 +14,7 @@ TL;DR
 - [ ] Create a Marvel Studios developer account at [http://developer.marvel.com/docs](http://developer.marvel.com/docs)
   - [ ] NOTE: There is a limit of `3,000` API calls per day with your developer credentials
 - [ ] Review the Cypher script at [https://github.com/JMHReif/graph-demo-datasets/blob/main/marvel-comics/marvel-api.cypher](https://github.com/JMHReif/graph-demo-datasets/blob/main/marvel-comics/marvel-api.cypher) and update with your credentials
+  - [ ] Query 0 - Define parameters for Neo4j to use your Marvel Studios Developer credentials
   - [ ] Query 1 - Create indexes for improving performance (also adds constraints for unique properties)
   - [ ] Query 2 - Load chunks of Characters by name starting with each letter of the alphabet.
   - [ ] Query 3 - For all the Characters we just loaded, load all the related ComicIssue, Series, Story, Event, and Creator objects. I am just populating basic info on each of the nodes here.
@@ -25,6 +26,10 @@ TL;DR
 PREREQUISITES: This section assumes you've already created a free Neo4j database on AuraDB and obtained the appropriate credentials from the Marvel Studios Developer Portal.
 
 My annotations and notes from reviewing the Cypher queries - initially created by [Jennifer Reif](https://github.com/JMHReif) at [https://github.com/JMHReif/graph-demo-datasets/blob/main/marvel-comics/marvel-api.cypher](https://github.com/JMHReif/graph-demo-datasets/blob/main/marvel-comics/marvel-api.cypher) - will follow.
+
+#### Query 0 - Define parameters for Neo4j to use your Marvel Studios Developer credentials
+
+Please see [cypher/marvel-api-query-0.cypher](cypher/marvel-api-query-0.cypher)
 
 #### Query 1 - Create indexes for improving performance (also adds constraints for unique properties)
 
