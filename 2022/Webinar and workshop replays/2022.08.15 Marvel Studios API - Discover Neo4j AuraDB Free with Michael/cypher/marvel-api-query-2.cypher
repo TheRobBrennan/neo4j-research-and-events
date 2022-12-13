@@ -12,3 +12,10 @@ MERGE (char:Character {id: results.id})
 ',{batchSize: 1, iterateList:false, params:{suffix:suffix}})
 YIELD batches, total, timeTaken, committedOperations, failedOperations, failedBatches , retries, errorMessages , batch , operations, wasTerminated
 RETURN batches, total, timeTaken, committedOperations, failedOperations, failedBatches , retries, errorMessages , batch , operations, wasTerminated;
+
+// Example output
+// ╒═════════╤═══════╤═══════════╤═════════════════════╤══════════════════╤═══════════════╤═════════╤═══════════════╤══════════════════════════════════════════════════╤══════════════════════════════════════════════════╤═══════════════╕
+// │"batches"│"total"│"timeTaken"│"committedOperations"│"failedOperations"│"failedBatches"│"retries"│"errorMessages"│"batch"                                           │"operations"                                      │"wasTerminated"│
+// ╞═════════╪═══════╪═══════════╪═════════════════════╪══════════════════╪═══════════════╪═════════╪═══════════════╪══════════════════════════════════════════════════╪══════════════════════════════════════════════════╪═══════════════╡
+// │26       │26     │21         │26                   │0                 │0              │0        │{}             │{"total":26,"committed":26,"failed":0,"errors":{}}│{"total":26,"committed":26,"failed":0,"errors":{}}│false          │
+// └─────────┴───────┴───────────┴─────────────────────┴──────────────────┴───────────────┴─────────┴───────────────┴──────────────────────────────────────────────────┴──────────────────────────────────────────────────┴───────────────┘
