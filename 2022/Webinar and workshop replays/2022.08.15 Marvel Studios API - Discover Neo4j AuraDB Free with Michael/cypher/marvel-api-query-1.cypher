@@ -16,7 +16,7 @@
 // CREATE INDEX ON :Story(resourceURI);
 // CREATE INDEX ON :Event(resourceURI);
 
-// Neo4j v5.x
+// Updated for Neo4j v5.2.x
 // TROUBLESHOOTING: If you want to clear your schema (remove all constraints, indexes, etc):
 //    Neo4j Browser
 //    $ CALL apoc.schema.assert({}, {})

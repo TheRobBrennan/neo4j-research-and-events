@@ -15,7 +15,7 @@
 // YIELD batches, total, timeTaken, committedOperations, failedOperations, failedBatches , retries, errorMessages , batch , operations, wasTerminated
 // RETURN batches, total, timeTaken, committedOperations, failedOperations, failedBatches , retries, errorMessages , batch , operations, wasTerminated;
 
-// Neo4j v5.x
+// Updated for Neo4j v5.2.x
 WITH apoc.date.format(timestamp(), "ms", 'yyyyMMddHHmmss') AS ts
 WITH "&ts=" + ts + "&apikey=" + $marvel_public + "&hash=" + apoc.util.md5([ts,$marvel_private,$marvel_public]) as suffix
 CALL apoc.periodic.iterate('MATCH (s:Series) WHERE s.resourceURI IS NOT NULL OR s.startYear IS NOT NULL RETURN s LIMIT 100',

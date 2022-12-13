@@ -35,6 +35,8 @@ Please see [cypher/marvel-api-query-0.cypher](cypher/marvel-api-query-0.cypher)
 
 Please see [cypher/marvel-api-query-1.cypher](cypher/marvel-api-query-1.cypher)
 
+NOTE: This example has been updated to support Neo4j v5.2.x
+
 #### Query 2 - Load chunks of Characters by name starting with each letter of the alphabet
 
 Please see [cypher/marvel-api-query-2.cypher](cypher/marvel-api-query-2.cypher)
@@ -47,6 +49,10 @@ Please see [cypher/marvel-api-query-3.cypher](cypher/marvel-api-query-3.cypher)
 
 Please see [cypher/marvel-api-query-4.cypher](cypher/marvel-api-query-4.cypher)
 
+NOTE: This example has been updated to support Neo4j v5.2.x
+
 #### Query 5 - For all the Characters (names starting with "A"), hydrate the Event nodes with a few more properties
 
 Please see [cypher/marvel-api-query-5.cypher](cypher/marvel-api-query-5.cypher)
+
+NOTE: This example has been updated to support Neo4j v5.2.x
