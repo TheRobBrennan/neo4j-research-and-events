@@ -1,6 +1,12 @@
-# 2022.08.15 Marvel Studios API - Discover Neo4j AuraDB Free with Michael
+# Marvel Studios API - Discover Neo4j AuraDB Free with Michael
 
-Monday, December 12th, 2022, 9:05pm
+![screenshots/screenshot.png](screenshots/screenshot.png)
+
+This project contains both the example Cypher query files to load data in `./cypher` to AuraDB, and a sample Neo4j Graph DBMS dump file located in `./neo4j-marvel.dump` that can be imported into Neo4j directly.
+
+![screenshots/screenshot-neo4j-auradb.png](screenshots/screenshot-neo4j-auradb.png)
+
+![screenshots/screenshot-neo4j-browser.png](screenshots/screenshot-neo4j-browser.png)
 
 ## Notes
 
