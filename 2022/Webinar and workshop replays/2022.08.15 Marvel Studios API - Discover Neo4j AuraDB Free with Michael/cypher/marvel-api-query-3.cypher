@@ -35,3 +35,10 @@ MERGE (comic)-[r5:PART_OF]->(event)',
 {batchSize: 20, iterateList:false, retries:2, params:{suffix:suffix}})
 YIELD batches, total, timeTaken, committedOperations, failedOperations, failedBatches , retries, errorMessages , batch , operations, wasTerminated
 RETURN batches, total, timeTaken, committedOperations, failedOperations, failedBatches , retries, errorMessages , batch , operations, wasTerminated;
+
+// Example output
+// ╒═════════╤═══════╤═══════════╤═════════════════════╤══════════════════╤═══════════════╤═════════╤═══════════════╤════════════════════════════════════════════════╤════════════════════════════════════════════════════╤═══════════════╕
+// │"batches"│"total"│"timeTaken"│"committedOperations"│"failedOperations"│"failedBatches"│"retries"│"errorMessages"│"batch"                                         │"operations"                                        │"wasTerminated"│
+// ╞═════════╪═══════╪═══════════╪═════════════════════╪══════════════════╪═══════════════╪═════════╪═══════════════╪════════════════════════════════════════════════╪════════════════════════════════════════════════════╪═══════════════╡
+// │5        │100    │527        │100                  │0                 │0              │0        │{}             │{"total":5,"committed":5,"failed":0,"errors":{}}│{"total":100,"committed":100,"failed":0,"errors":{}}│false          │
+// └─────────┴───────┴───────────┴─────────────────────┴──────────────────┴───────────────┴─────────┴───────────────┴────────────────────────────────────────────────┴────────────────────────────────────────────────────┴───────────────┘
